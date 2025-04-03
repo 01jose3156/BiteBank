@@ -1,0 +1,34 @@
+### Get all games
+GET http://localhost:3000/api/users
+Content-Type: application/json
+
+### Register user
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "fullName": "Miguel Ramirez",
+  "email": "miguelramirezdiaz@gmail.com",
+  "password": "miguel123",
+  "phone": "1234567289",
+  "documentType": "DNI",
+  "documentNumber": "12345678921"
+}
+
+### Get user by id
+GET http://localhost:3000/api/users/67edd474cfc08766c6d84e31
+Content-Type: application/json
+
+### Update user
+PUT http://localhost:3000/api/users/67edd474cfc08766c6d84e31
+Content-Type: application/json
+
+{
+  "fullName": "Miguel Ramirez Diaz",
+  "email": "miguelramirez@gmail.com",
+  "phone": "987654321"
+}
+
+### Delete user
+DELETE http://localhost:3000/api/users/67edda54f5d0ce1c7760313f
+Content-Type: application/json

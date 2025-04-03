@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "En muchas regiones, especialmente en áreas rurales o entre personas con ingresos informales, realizar transferencias de dinero de manera rápida y segura es un desafío. Los bancos tradicionales suelen tener procesos lentos, comisiones altas y requisitos complejos, mientras que otras alternativas (como efectivo o servicios informales) carecen de seguridad y trazabilidad.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,8 +20,11 @@
   },
   "homepage": "https://github.com/01jose3156/BiteBank#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "bitebank": "file:",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongodb": "^6.15.0"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.1"
   }
 }
