@@ -15,6 +15,16 @@ Content-Type: application/json
   "documentNumber": "12345678921"
 }
 
+### Login user
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "miguelramirezdiaz@gmail.com",
+  "password": "miguel123"
+}
+
+
 ### Get user by id
 GET http://localhost:3000/api/users/67edd474cfc08766c6d84e31
 Content-Type: application/json
