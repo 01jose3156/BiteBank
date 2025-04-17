@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import ValidToken from "../../../data/models/validTokens.js";
+import ValidToken from "../../../data/models/ValidToken.js";
 
 export const authMiddleware = async (req, res, next) => {
   const token = req.header("Authorization")?.replace("Bearer ", "");
