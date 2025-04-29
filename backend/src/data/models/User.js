@@ -7,6 +7,7 @@ const userSchema = new mongoose.Schema({
   phone: { type: String, required: true },
   documentType: { type: String, enum: ["DNI", "Passport"], required: true },
   documentNumber: { type: String, required: true, unique: true },
+  balance: { type: Number, default: 0 },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now }
 });

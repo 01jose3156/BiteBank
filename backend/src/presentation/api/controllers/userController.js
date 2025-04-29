@@ -38,6 +38,22 @@ export const login = async (req, res) => {
     }
   };
 
+  export const getProfile = async (req, res) => {
+    try {
+      const user = await userService.getUserById(req.userId);
+      if (!user) {
+        return res.status(404).json({ message: "User not found" });
+      }
+  
+      const { password, ...userData } = user.toObject();
+  
+      res.json(userData);
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
+  };
+  
+
 export const getUsers = async (req, res) => {
   try {
     const users = await userService.getUsers();

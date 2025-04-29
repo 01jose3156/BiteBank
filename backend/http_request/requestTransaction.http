@@ -1,0 +1,14 @@
+### Crear transacción
+POST http://localhost:3000/api/transactions
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODE5N2UyMWVkZjQzNDViN2M5NTI1ZGIiLCJpYXQiOjE3NDY1MDEyNDIsImV4cCI6MTc0NjU4NzY0Mn0.3BZt3h8YMSOwK2f9DWruL-7yydSGKxlmyFoCQd2SIks
+
+{
+  "senderId": "68197e21edf4345b7c9525db",
+  "receiverId": "67eddc96b2f072e240d11816",
+  "amount": 100
+}
+
+### Obtener transacciones del usuario
+GET http://localhost:3000/api/transactions
+Authorization: Bearer <TOKEN>
